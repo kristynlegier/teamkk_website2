@@ -3,230 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal webpage of Kristyn Legier - Information Systems student, projects, skills, and contact information.">
-    <title>Kristyn Legier - Personal Webpage</title>
+    <meta name="description" content="Personal webpage and portfolio of Kristyn Legier - International Trade & Finance and Information Systems & Analytics student at LSU.">
+    <title>Home | Kristyn Legier</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header id="top">
-        <h1>Kristyn Legier</h1>
-        <p><strong>Student &amp; Aspiring Technology Professional</strong></p>
-        <p>Welcome to my personal webpage! Here you can find information about my academic background, technical skills, projects, and ways to get in touch.</p>
-        
-        <!-- Navigation Bar (Internal Anchor Links) -->
-        <nav>
-            <p>
-                <strong>Jump to:</strong>
-                <a href="#about">About Me</a> |
-                <a href="#education">Education</a> |
-                <a href="#experience">Experience</a> |
-                <a href="#skills">Skills</a> |
-                <a href="#projects">Projects</a> |
-                <a href="#contact">Contact</a>
-            </p>
-        </nav>
+    <!-- Main Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo" title="Kristyn Legier Home">
+                <span class="logo-badge">KL</span>
+                <span class="brand-text">Kristyn Legier</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="project.html" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <hr>
+    <div class="site-wrapper">
+        <!-- Hero / Header Section -->
+        <section class="page-header">
+            <div style="max-width: 800px;">
+                <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Louisiana State University &bull; Class of 2027</span>
+                <h1>Hello, I'm Kristyn Legier.</h1>
+                <p class="page-subtitle">
+                    Dual-major student in <strong>International Trade &amp; Finance (B.S.)</strong> and 
+                    <strong>Information Systems &amp; Analytics (B.S.)</strong> at LSU with a 3.60 GPA. Experienced in retail banking, bilingual communication, and digital technology solutions.
+                </p>
+                <div class="contact-quickbar">
+                    <span>📍 Baton Rouge, LA</span>
+                    <span>📞 (225) 954-1779</span>
+                    <span>✉️ <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></span>
+                </div>
+                <div class="header-actions">
+                    <a href="resume.html" class="btn btn-primary">📄 View My Resume</a>
+                    <a href="project.html" class="btn btn-outline">🚀 View My Projects</a>
+                    <a href="#contact" class="btn btn-outline">✉️ Contact Me</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Main Content -->
-    <main>
+        <!-- Main Content -->
+        <main>
+            <!-- About Me Section -->
+            <section class="section" id="about">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card">
+                    <p>
+                        I am an undergraduate student at Louisiana State University driven by the intersection of 
+                        <strong>global finance, modern information systems, and data analytics</strong>. Through both academic rigors and professional experience at organizations like J.P. Morgan Chase, I strive to bridge the gap between financial decision-making and technology-driven operations.
+                    </p>
+                    <blockquote style="border-left: 3px solid var(--primary); padding-left: 1rem; margin: 1.25rem 0; font-style: italic; color: var(--text-main);">
+                        "The best way to predict the future is to create it." &mdash; Peter Drucker
+                    </blockquote>
+                    <p>
+                        Beyond academics, I am active in the <strong>Center for Internal Auditing Program</strong>, 
+                        <strong>Alpha Kappa Psi</strong> professional business fraternity, and community volunteering. I am also a fluent Spanish speaker with experience in legal case file translation and academic language tutoring.
+                    </p>
+                </div>
+            </section>
 
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hello! I am an Information Systems student passionate about technology, data analytics, and digital innovation. 
-                I enjoy exploring how modern software solutions and artificial intelligence can solve real-world business challenges.
-            </p>
-            <blockquote>
-                <em>"The best way to predict the future is to create it."</em> &mdash; Peter Drucker
-            </blockquote>
-            <p><strong>Hobbies &amp; Interests:</strong></p>
-            <ul>
-                <li>Emerging Technologies &amp; Artificial Intelligence</li>
-                <li>Data Analysis &amp; Visualization</li>
-                <li>Problem Solving and Systems Design</li>
-                <li>Reading, Traveling, and Continuous Learning</li>
+            <!-- Quick Snapshot: Education & Core Focus -->
+            <section class="section">
+                <div class="grid-2">
+                    <!-- Academic Card -->
+                    <div class="card" style="margin-bottom: 0;">
+                        <span class="badge badge-primary" style="margin-bottom: 0.75rem;">Academic Profile</span>
+                        <h3>Louisiana State University</h3>
+                        <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">
+                            Dual B.S. in International Trade &amp; Finance and Information Systems &amp; Analytics
+                        </p>
+                        <p style="font-size: 0.92rem;">
+                            <strong>Cumulative GPA:</strong> 3.60<br>
+                            <strong>Target Graduation:</strong> December 2027<br>
+                            <strong>Key Areas:</strong> International Finance, Global Business, Systems Analysis, Data Modeling, Information Systems &amp; AI Lab.
+                        </p>
+                        <a href="resume.html#education" class="btn btn-sm btn-outline" style="margin-top: 0.5rem;">See Course Details &rarr;</a>
+                    </div>
+
+                    <!-- Experience Snapshot -->
+                    <div class="card" style="margin-bottom: 0;">
+                        <span class="badge badge-gold" style="margin-bottom: 0.75rem;">Experience Snapshot</span>
+                        <h3>Banking &amp; Business Operations</h3>
+                        <p style="font-weight: 600; color: var(--text-main); margin-bottom: 0.5rem;">
+                            Associate Banker at J.P. Morgan Chase
+                        </p>
+                        <p style="font-size: 0.92rem;">
+                            Building high-trust client relationships, conducting financial transactions, managing risk, and maintaining compliance standards. Previous experience in retail operations at Dick's House of Sport and legal intern casework.
+                        </p>
+                        <a href="resume.html#experience" class="btn btn-sm btn-outline" style="margin-top: 0.5rem;">View Career History &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Competencies -->
+            <section class="section" id="skills">
+                <div class="section-title">
+                    <h2>Core Competencies</h2>
+                </div>
+                <div class="card">
+                    <div class="skills-container">
+                        <span class="skill-pill"><strong>📜 Certified Internet Business</strong></span>
+                        <span class="skill-pill">🗣️ Fluent Spanish Speaker</span>
+                        <span class="skill-pill">📊 Microsoft Excel</span>
+                        <span class="skill-pill">🌐 HTML5 &amp; CSS3</span>
+                        <span class="skill-pill">📝 Microsoft Word</span>
+                        <span class="skill-pill">🏛️ Banking &amp; Financial Operations</span>
+                        <span class="skill-pill">🛡️ Regulatory &amp; Risk Compliance</span>
+                        <span class="skill-pill">🔍 Internal Auditing &amp; Controls</span>
+                        <span class="skill-pill">📈 International Trade Analysis</span>
+                        <span class="skill-pill">🤝 Client Advisory</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p>
+                            I welcome opportunities to connect regarding internships, professional roles in financial services, 
+                            systems analysis, or academic collaborations.
+                        </p>
+                        <div class="card" style="margin-top: 1rem;">
+                            <p><strong>Email:</strong> <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></p>
+                            <p><strong>Phone:</strong> (225) 954-1779</p>
+                            <p><strong>Location:</strong> Baton Rouge, Louisiana</p>
+                            <p><strong>University:</strong> Louisiana State University</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem;">Send a Direct Message</h3>
+                        <form action="mailto:klegie1@lsu.edu" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="4" required placeholder="Hello Kristyn, I would like to connect regarding..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Kristyn Legier &bull; Louisiana State University</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-
-        <hr>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <article>
-                <h3>Bachelor of Science in Information Systems and Decision Sciences (ISDS)</h3>
-                <p><strong>Status:</strong> Undergraduate Student</p>
-                <p><strong>Relevant Coursework:</strong></p>
-                <ul>
-                    <li>ISDS 3100: Information Systems &amp; AI Laboratory</li>
-                    <li>Database Management Systems &amp; SQL</li>
-                    <li>Business Data Analytics &amp; Statistics</li>
-                    <li>Systems Analysis &amp; Design</li>
-                    <li>Business Telecommunications &amp; Networking</li>
-                </ul>
-            </article>
-        </section>
-
-        <hr>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience &amp; Leadership</h2>
-            
-            <article>
-                <h3>Student Technologist / Project Contributor</h3>
-                <p><em>Academic Projects &amp; Labs &bull; 2024 &ndash; Present</em></p>
-                <ul>
-                    <li>Collaborated on cross-functional team assignments focused on technology implementation.</li>
-                    <li>Conducted research on artificial intelligence workflows and software automation tools.</li>
-                    <li>Delivered presentations on technical solutions and practical system requirements.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Peer Collaborator &amp; Study Group Leader</h3>
-                <p><em>University Campus &bull; 2023 &ndash; Present</em></p>
-                <ul>
-                    <li>Assisted classmates in understanding core concepts in database management and systems analysis.</li>
-                    <li>Organized structured review sessions leading to measurable improvements in test performance.</li>
-                </ul>
-            </article>
-        </section>
-
-        <hr>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills Overview</h2>
-            <p>Here is an overview of my technical proficiencies and competencies:</p>
-            
-            <table border="1" cellpadding="6" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Competencies / Tools</th>
-                        <th>Proficiency Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Web &amp; Markup</strong></td>
-                        <td>HTML5, Markdown, Document Structuring</td>
-                        <td>Proficient</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Data &amp; Databases</strong></td>
-                        <td>SQL, Relational Modeling, Spreadsheet Modeling</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Programming &amp; Scripting</strong></td>
-                        <td>Python Fundamentals, Git Version Control</td>
-                        <td>Working Knowledge</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Productivity &amp; Collaboration</strong></td>
-                        <td>Microsoft Office Suite, Google Workspace, GitHub</td>
-                        <td>Advanced</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Professional Skills</strong></td>
-                        <td>Analytical Thinking, Communication, Team Collaboration</td>
-                        <td>Advanced</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Academic &amp; Personal Projects</h2>
-
-            <article>
-                <h3>1. AI Lab Exploration &amp; Automation Project</h3>
-                <p>An ongoing exploration into utilizing AI tools, automated workflows, and developer platforms to build digital solutions.</p>
-                <details>
-                    <summary><strong>Click to view project details &amp; takeaways</strong></summary>
-                    <p>Focused on understanding prompt engineering, autonomous coding agents, and integrating foundational technologies to streamline academic and business tasks.</p>
-                </details>
-            </article>
-            <br>
-
-            <article>
-                <h3>2. Relational Database Design Project</h3>
-                <p>Designed and normalized a relational database schema for an inventory management system.</p>
-                <details>
-                    <summary><strong>Click to view project details &amp; takeaways</strong></summary>
-                    <p>Created Entity-Relationship Diagrams (ERDs), applied third normal form (3NF), and wrote complex SQL queries for multi-table joins and reporting aggregations.</p>
-                </details>
-            </article>
-            <br>
-
-            <article>
-                <h3>3. Pure HTML Semantic Portfolio</h3>
-                <p>A minimalist personal website built entirely with clean, standard-compliant HTML5 without any CSS or JavaScript.</p>
-                <details>
-                    <summary><strong>Click to view project details &amp; takeaways</strong></summary>
-                    <p>Emphasizes accessibility, semantic structure, valid markup hierarchy, and fast loading performance directly out of the box.</p>
-                </details>
-            </article>
-        </section>
-
-        <hr>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via email or connect with me online:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:klegier@example.com">klegier@example.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com</a></li>
-            </ul>
-
-            <h3>Send a Message</h3>
-            <p>You can also leave a message using the form below:</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Contact Form</legend>
-                    <p>
-                        <label for="name">Your Name:</label><br>
-                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
-                    </p>
-                    <p>
-                        <label for="email">Your Email:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
-                    </p>
-                    <p>
-                        <label for="subject">Subject:</label><br>
-                        <input type="text" id="subject" name="subject" placeholder="Inquiry / Greeting">
-                    </p>
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="40" required placeholder="Write your message here..."></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Submit Message">
-                        <input type="reset" value="Clear Form">
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-
-    </main>
-
-    <hr>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Kristyn Legier. All rights reserved.</p>
-        <p><a href="#top">Back to top &uarr;</a></p>
+        </div>
     </footer>
 
 </body>
