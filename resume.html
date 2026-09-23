@@ -6,6 +6,7 @@
     <meta name="description" content="Resume of Kristyn Legier - Undergraduate student at Louisiana State University studying International Trade & Finance and Information Systems & Analytics.">
     <title>Resume | Kristyn Legier</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="theme.js"></script>
 </head>
 <body>
 
@@ -16,39 +17,54 @@
                 <span class="logo-badge">KL</span>
                 <span class="brand-text">Kristyn Legier</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="resume.html" class="nav-link active">Resume</a></li>
-                    <li><a href="project.html" class="nav-link">Projects</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-actions">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                        <li><a href="project.html" class="nav-link">Projects</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <div class="site-wrapper">
         <!-- Page Header / Intro -->
         <div class="page-header">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.25rem;">
                 <div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+                        <span class="badge badge-dark">Louisiana State University</span>
+                        <span class="badge badge-gold">GPA 3.60</span>
+                        <span class="badge badge-primary">Class of 2027</span>
+                    </div>
                     <h1>Kristyn Legier</h1>
                     <p class="page-subtitle">
-                        B.S. Candidate in <strong>International Trade &amp; Finance</strong> and <strong>Information Systems &amp; Analytics</strong> at Louisiana State University.
+                        Candidate for Bachelor of Science in <strong>International Trade &amp; Finance</strong> and <strong>Information Systems &amp; Analytics</strong>.
                     </p>
                     <div class="contact-quickbar">
-                        <span>📍 Baton Rouge, LA</span>
-                        <span>📞 (225) 954-1779</span>
-                        <span>✉️ <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></span>
+                        <span>Baton Rouge, LA</span>
+                        <span>&bull;</span>
+                        <span>(225) 954-1779</span>
+                        <span>&bull;</span>
+                        <span><a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></span>
+                        <span>&bull;</span>
+                        <span>Fluent Spanish Speaker</span>
                     </div>
                 </div>
 
                 <div class="header-actions no-print">
                     <button type="button" onclick="window.print()" class="btn btn-outline" title="Print or save as PDF">
-                        🖨️ Print / Save PDF
+                        Print / Download PDF
                     </button>
                     <a href="mailto:klegie1@lsu.edu" class="btn btn-primary">
-                        ✉️ Get in Touch
+                        Contact Directly
                     </a>
                 </div>
             </div>
@@ -60,7 +76,7 @@
             <section class="section" id="education">
                 <div class="section-title">
                     <h2>Education</h2>
-                    <span class="badge badge-gold">GPA: 3.60</span>
+                    <span class="badge badge-gold">Cumulative GPA: 3.60</span>
                 </div>
 
                 <div class="card">
@@ -71,10 +87,10 @@
                         </div>
                         <span class="resume-date">August 2024 &ndash; December 2027</span>
                     </div>
-                    <p style="font-weight: 600; color: var(--text-main); margin-top: 0.25rem;">
+                    <p style="font-weight: 600; color: var(--text-primary); margin-top: 0.25rem;">
                         International Trade and Finance, B.S. &mdash; Information Systems and Analytics, B.S.
                     </p>
-                    <p style="margin-top: 0.5rem;">
+                    <p style="margin-top: 0.65rem;">
                         <strong>Related Coursework:</strong> International Finance, Economics, Business Management, Global Business, Systems Analysis &amp; Design, Information Systems &amp; AI Laboratory.
                     </p>
                 </div>
@@ -83,7 +99,7 @@
             <!-- Experience Section -->
             <section class="section" id="experience">
                 <div class="section-title">
-                    <h2>Professional Experience</h2>
+                    <h2>Experience</h2>
                 </div>
 
                 <!-- Experience 1: J.P. Morgan Chase -->
@@ -134,7 +150,7 @@
                     </div>
                     <div class="resume-location">Baton Rouge, LA</div>
                     <ul class="resume-bullets">
-                        <li>Organized and filed case files for new inmates, categorizing them by district for easy access and record retrieval.</li>
+                        <li>Organized and filed case files for new inmates, categorizing them by district for easy access and efficient retrieval.</li>
                         <li>Created and managed legal documents, including motions and bills, ensuring accurate filing and compliance documentation.</li>
                         <li>Gained hands-on experience in legal procedures and case management; as well as aided in Spanish-to-English translation.</li>
                     </ul>
@@ -145,16 +161,16 @@
                     <div class="resume-dot"></div>
                     <div class="resume-header">
                         <div>
-                            <span class="resume-role">Academic &amp; Language Tutor</span>
-                            <span class="resume-company"> &bull; Self-Employed / Tutoring</span>
+                            <span class="resume-role">Academic / Language Tutor</span>
+                            <span class="resume-company"> &bull; Private Practice</span>
                         </div>
                         <span class="resume-date">August 2022 &ndash; May 2024</span>
                     </div>
                     <div class="resume-location">Baton Rouge, LA</div>
                     <ul class="resume-bullets">
                         <li>Provided individualized tutoring support in English and Spanish, enhancing language proficiency for diverse learners.</li>
-                        <li>Assisted students with proofreading and editing academic papers, improving writing clarity, grammar, and coherence.</li>
-                        <li>Explained complex math concepts and equations, fostering understanding and boosting student confidence.</li>
+                        <li>Assisted students with proofreading and editing academic papers, improving writing clarity, structure, and coherence.</li>
+                        <li>Explained complex math concepts and equations, fostering understanding and boosting academic confidence in students.</li>
                     </ul>
                 </div>
             </section>
@@ -166,25 +182,25 @@
                 </div>
 
                 <div class="card">
-                    <div style="margin-bottom: 1.25rem;">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Certifications &amp; Professional Tools</h4>
+                    <div style="margin-bottom: 1.35rem;">
+                        <h4 style="margin-bottom: 0.65rem; color: var(--text-primary);">Technical &amp; Software Proficiency</h4>
                         <div class="skills-container">
-                            <span class="skill-pill"><strong>📜 Certified Internet Business</strong></span>
-                            <span class="skill-pill">🌐 HTML5</span>
-                            <span class="skill-pill">📊 Microsoft Excel</span>
-                            <span class="skill-pill">📝 Microsoft Word</span>
-                            <span class="skill-pill">📁 Relational Data &amp; SQL</span>
+                            <span class="skill-pill"><strong>Certified Internet Business</strong></span>
+                            <span class="skill-pill">HTML5 &amp; CSS3</span>
+                            <span class="skill-pill">Microsoft Excel</span>
+                            <span class="skill-pill">Microsoft Word</span>
+                            <span class="skill-pill">Relational Databases &amp; SQL</span>
                         </div>
                     </div>
 
                     <div>
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Languages &amp; Core Strengths</h4>
+                        <h4 style="margin-bottom: 0.65rem; color: var(--text-primary);">Languages &amp; Core Strengths</h4>
                         <div class="skills-container">
-                            <span class="skill-pill">🗣️ Fluent Spanish Speaker</span>
-                            <span class="skill-pill">🔤 English (Native)</span>
-                            <span class="skill-pill">🤝 Client Relations &amp; Advisory</span>
-                            <span class="skill-pill">🛡️ Regulatory &amp; Risk Compliance</span>
-                            <span class="skill-pill">📈 Financial Analysis</span>
+                            <span class="skill-pill">Fluent Spanish Speaker</span>
+                            <span class="skill-pill">Native English</span>
+                            <span class="skill-pill">Client Relations &amp; Advisory</span>
+                            <span class="skill-pill">Regulatory &amp; Risk Compliance</span>
+                            <span class="skill-pill">Financial Analysis &amp; Valuation</span>
                         </div>
                     </div>
                 </div>
@@ -206,19 +222,19 @@
                     <div class="card" style="margin-bottom: 0;">
                         <h4 style="margin-bottom: 0.35rem;">Center for Internal Auditing Program</h4>
                         <p style="font-size: 0.88rem;">Premier internal auditing and risk analysis training curriculum recognized globally for analytical excellence.</p>
-                        <span class="badge badge-primary">LSU CIA Program</span>
+                        <span class="badge badge-dark">LSU CIA Program</span>
                     </div>
 
                     <div class="card" style="margin-bottom: 0;">
-                        <h4 style="margin-bottom: 0.35rem;">Spanish Translator &amp; Tutor</h4>
+                        <h4 style="margin-bottom: 0.35rem;">Spanish Translator</h4>
                         <p style="font-size: 0.88rem;">Aided in legal translations for case files and provided multilingual academic guidance to ESL students.</p>
-                        <span class="badge badge-primary">Bilingual Outreach</span>
+                        <span class="badge badge-emerald">Bilingual Outreach</span>
                     </div>
 
                     <div class="card" style="margin-bottom: 0;">
                         <h4 style="margin-bottom: 0.35rem;">NSLS</h4>
                         <p style="font-size: 0.88rem;">National Society of Leadership and Success &mdash; participating in leadership summits and peer development.</p>
-                        <span class="badge badge-gray">Honor Society</span>
+                        <span class="badge badge-gold">Honor Society</span>
                     </div>
 
                     <div class="card" style="margin-bottom: 0;">
@@ -228,7 +244,7 @@
                     </div>
 
                     <div class="card" style="margin-bottom: 0;">
-                        <h4 style="margin-bottom: 0.35rem;">Community Volunteering</h4>
+                        <h4 style="margin-bottom: 0.35rem;">Volunteering</h4>
                         <p style="font-size: 0.88rem;">Dedicated volunteer support across the greater Baton Rouge area for civic and community welfare programs.</p>
                         <span class="badge badge-gray">Service &amp; Outreach</span>
                     </div>

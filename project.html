@@ -6,6 +6,7 @@
     <meta name="description" content="Projects Portfolio of Kristyn Legier - Showcasing work in Information Systems, Financial Analytics, International Trade, and Systems Design.">
     <title>Projects | Kristyn Legier</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="theme.js"></script>
 </head>
 <body>
 
@@ -16,28 +17,39 @@
                 <span class="logo-badge">KL</span>
                 <span class="brand-text">Kristyn Legier</span>
             </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="resume.html" class="nav-link">Resume</a></li>
-                    <li><a href="project.html" class="nav-link active">Projects</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-actions">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li><a href="project.html" class="nav-link active">Projects</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <div class="site-wrapper">
         <!-- Page Header -->
         <div class="page-header">
-            <h1>Featured Projects</h1>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+                <span class="badge badge-dark">Portfolio</span>
+                <span class="badge badge-primary">Coursework &amp; Research</span>
+                <span class="badge badge-emerald">Systems &amp; Analytics</span>
+            </div>
+            <h1>Selected Projects</h1>
             <p class="page-subtitle">
-                A showcase of academic coursework, analytical models, and technical systems bridging 
+                A collection of academic coursework, analytical models, and technical architectures bridging 
                 <strong>Information Systems &amp; Analytics</strong> with <strong>International Trade &amp; Finance</strong>.
             </p>
             <div class="header-actions">
-                <a href="resume.html" class="btn btn-outline">📄 View Full Resume</a>
-                <a href="#contact-footer" class="btn btn-primary">✉️ Inquire About a Project</a>
+                <a href="resume.html" class="btn btn-outline">View Complete Resume</a>
+                <a href="mailto:klegie1@lsu.edu" class="btn btn-primary">Inquire Regarding Projects &rarr;</a>
             </div>
         </div>
 
@@ -47,29 +59,29 @@
 
                 <!-- Project 1 -->
                 <article class="project-card">
-                    <div class="project-category">Information Systems &amp; Web Design</div>
-                    <h3>Multi-Page Portfolio &amp; Digital Presence</h3>
+                    <div class="project-category">Information Systems &bull; Web Design</div>
+                    <h3>Multi-Page Portfolio &amp; Digital Infrastructure</h3>
                     <p class="project-description">
-                        Designed and deployed a responsive personal web platform and technical portfolio. Built from scratch utilizing semantic HTML5 and a bespoke vanilla CSS design system featuring reusable components, responsive grids, and print-optimized resume layouts.
+                        Designed and deployed a responsive personal web platform and technical portfolio. Built utilizing clean semantic HTML5 and a bespoke modern design system featuring reusable components, responsive grid layouts, and print-optimized resume styles.
                     </p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">Vanilla CSS3</span>
-                        <span class="tag">Responsive UI</span>
-                        <span class="tag">Git Version Control</span>
+                        <span class="tag">Responsive Architecture</span>
+                        <span class="tag">Git &amp; GitHub</span>
                     </div>
                     <div class="project-footer">
-                        <span class="badge badge-primary">Coursework &bull; ISDS 3100</span>
-                        <a href="index.html" class="btn btn-sm btn-outline">Explore Live &rarr;</a>
+                        <span class="badge badge-primary">ISDS 3100 Lab</span>
+                        <a href="index.html" class="btn btn-sm btn-outline">Live Preview &rarr;</a>
                     </div>
                 </article>
 
                 <!-- Project 2 -->
                 <article class="project-card">
-                    <div class="project-category">International Trade &amp; Financial Analytics</div>
+                    <div class="project-category">International Trade &bull; Financial Analytics</div>
                     <h3>Global Trade &amp; Currency Risk Valuation Model</h3>
                     <p class="project-description">
-                        Constructed financial and economic spreadsheets modeling foreign currency exchange volatility and tariff exposure for multinational enterprises. Simulated cross-border trade transactions to evaluate margin risks under shifting trade agreements.
+                        Constructed financial and macroeconomic models evaluating foreign currency exchange rate fluctuations and tariff exposure for multinational enterprises. Simulated cross-border trade transactions to quantify margin risks under changing trade policies.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Financial Modeling</span>
@@ -78,17 +90,17 @@
                         <span class="tag">Risk Analysis</span>
                     </div>
                     <div class="project-footer">
-                        <span class="badge badge-primary">Trade &amp; Finance Focus</span>
+                        <span class="badge badge-gold">Trade &amp; Finance Focus</span>
                         <span style="font-size: 0.85rem; color: var(--text-muted);">Academic Research</span>
                     </div>
                 </article>
 
                 <!-- Project 3 -->
                 <article class="project-card">
-                    <div class="project-category">Banking Systems &amp; Operations</div>
+                    <div class="project-category">Banking Systems &bull; Internal Controls</div>
                     <h3>Banking Transaction &amp; Compliance Workflow Architecture</h3>
                     <p class="project-description">
-                        Researched and outlined standard operating procedures for branch retail banking operations. Identified operational risk points in customer account onboarding, fund transfers, and regulatory reporting under federal banking compliance protocols.
+                        Researched and mapped standard operating procedures for retail banking transactions. Identified internal operational control points in customer onboarding, fund transfers, and regulatory reporting under federal compliance guidelines.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Retail Banking</span>
@@ -97,17 +109,17 @@
                         <span class="tag">Internal Controls</span>
                     </div>
                     <div class="project-footer">
-                        <span class="badge badge-gold">Industry Applied</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">Internal Auditing Program</span>
+                        <span class="badge badge-dark">Applied Industry Model</span>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">CIA Program</span>
                     </div>
                 </article>
 
                 <!-- Project 4 -->
                 <article class="project-card">
-                    <div class="project-category">Database &amp; Information Systems</div>
+                    <div class="project-category">Database &bull; Systems Analysis</div>
                     <h3>Legal Case File Indexing &amp; Records Classification</h3>
                     <p class="project-description">
-                        Designed a systematic records organization framework for inmate legal documentation. Mapped filing taxonomies by district jurisdiction, standardized motion document archiving, and implemented a bilingual English/Spanish categorization system for fast case access.
+                        Designed a structured records organization schema for legal case documentation. Mapped filing taxonomies by district jurisdiction, standardized motion document archiving, and implemented a bilingual English/Spanish categorization system for fast case retrieval.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Records Indexing</span>
@@ -116,17 +128,17 @@
                         <span class="tag">Case Management</span>
                     </div>
                     <div class="project-footer">
-                        <span class="badge badge-primary">Public Defender&rsquo;s Office</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">Process Design</span>
+                        <span class="badge badge-emerald">Legal Informatics</span>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Public Defender's Office</span>
                     </div>
                 </article>
 
                 <!-- Project 5 -->
                 <article class="project-card">
-                    <div class="project-category">Emerging Technologies &amp; AI</div>
+                    <div class="project-category">Emerging Technology &bull; Artificial Intelligence</div>
                     <h3>AI-Driven Productivity &amp; Development Exploration</h3>
                     <p class="project-description">
-                        Explored the practical implementation of agentic AI coding assistants, generative tools, and developer workflows within the ISDS 3100 AI Lab curriculum. Evaluated opportunities for small business automation and enhanced productivity.
+                        Investigated the application of agentic AI coding assistants, generative language models, and developer workflows within the ISDS 3100 curriculum. Evaluated potential productivity gains and workflow optimizations for enterprise tasks.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Artificial Intelligence</span>
@@ -142,19 +154,19 @@
 
                 <!-- Project 6 -->
                 <article class="project-card">
-                    <div class="project-category">Bilingual Education &amp; Tutoring</div>
-                    <h3>Bilingual Academic Support &amp; Language Resource Kit</h3>
+                    <div class="project-category">Bilingual Education &bull; Mentorship</div>
+                    <h3>Multilingual Academic Support &amp; Educational Materials</h3>
                     <p class="project-description">
-                        Developed structured bilingual educational resources and math translation worksheets. Supported diverse student demographics in mastering academic writing conventions and mathematical problem-solving methods.
+                        Authored structured bilingual educational resources and mathematical problem-solving aids. Assisted diverse student cohorts in mastering academic writing conventions, grammar precision, and analytical math concepts.
                     </p>
                     <div class="project-tags">
                         <span class="tag">Bilingual Education</span>
                         <span class="tag">English / Spanish</span>
                         <span class="tag">Curriculum Design</span>
-                        <span class="tag">Mentorship</span>
+                        <span class="tag">Academic Tutoring</span>
                     </div>
                     <div class="project-footer">
-                        <span class="badge badge-gray">Community Impact</span>
+                        <span class="badge badge-gray">Academic Outreach</span>
                         <span style="font-size: 0.85rem; color: var(--text-muted);">2022 &ndash; 2024</span>
                     </div>
                 </article>
