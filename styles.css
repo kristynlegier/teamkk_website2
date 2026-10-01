@@ -5,10 +5,79 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
-:root {
+:root, [data-theme="light"] {
     /* ----------------------------------------------------------------------
-       Warm Bronze & Minimalist Mocha Theme (Default Dark Theme)
+       Warm Editorial Linen & Ivory Theme (Default Light Theme)
        ---------------------------------------------------------------------- */
+    --bg-base: #fbf8f4;
+    --bg-surface: rgba(255, 255, 255, 0.94);
+    --bg-surface-elevated: #ffffff;
+    --bg-subtle: #f4ece2;
+    --bg-muted: #e9dec9;
+
+    --border-hairline: 1px solid #e7dbcc;
+    --border-card: 1px solid rgba(215, 196, 178, 0.55);
+    --border-hover: #c9b59e;
+    --border-active: #a35f29;
+
+    --text-primary: #231c16;
+    --text-secondary: #4d3f35;
+    --text-muted: #78685b;
+    --text-subtle: #9c8c7e;
+
+    /* Primary Warm Saddle Bronze */
+    --primary: #a35f29;
+    --primary-hover: #854b1e;
+    --primary-light: #f8efe5;
+    --primary-border: #e8cfbb;
+    --primary-glow: rgba(163, 95, 41, 0.18);
+
+    /* Accents */
+    --accent: #231c16;
+    --accent-bronze: #a35f29;
+    --accent-terracotta: #c0563b;
+    --accent-emerald: #2d7a4f;
+    --accent-emerald-bg: #edf7f0;
+    --accent-emerald-border: #b6e1c4;
+    
+    --accent-gold: #b47b19;
+    --accent-gold-bg: #fef7e7;
+    --accent-gold-border: #f7dfa7;
+
+    --badge-dark-bg: #231c16;
+    --badge-dark-text: #ffffff;
+    --badge-dark-border: #231c16;
+
+    --header-bg: rgba(251, 248, 244, 0.88);
+    --header-border: 1px solid #e7dbcc;
+
+    --card-shadow: 0 4px 6px -1px rgba(35, 28, 22, 0.04), 0 10px 24px -4px rgba(35, 28, 22, 0.06);
+    --card-shadow-hover: 0 14px 30px -6px rgba(35, 28, 22, 0.12), 0 0 18px rgba(163, 95, 41, 0.18);
+    
+    --grid-line-color: rgba(163, 95, 41, 0.035);
+    --quote-border: #a35f29;
+    --hero-gradient: linear-gradient(135deg, #231c16 35%, #a35f29 100%);
+
+    /* Typography */
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Radii */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-normal: 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ----------------------------------------------------------------------
+   Minimalist Mocha Dark Theme (Opt-in Dark Mode)
+   ---------------------------------------------------------------------- */
+[data-theme="dark"] {
     --bg-base: #13100e;
     --bg-surface: rgba(28, 24, 21, 0.75);
     --bg-surface-elevated: rgba(38, 32, 28, 0.88);
@@ -25,14 +94,12 @@
     --text-muted: #a39785;
     --text-subtle: #736858;
 
-    /* Primary Radiant Warm Bronze */
     --primary: #df9f68;
     --primary-hover: #c8854c;
     --primary-light: rgba(223, 159, 104, 0.14);
     --primary-border: rgba(223, 159, 104, 0.35);
     --primary-glow: rgba(223, 159, 104, 0.32);
 
-    /* Accents */
     --accent: #faf6f0;
     --accent-bronze: #df9f68;
     --accent-terracotta: #e07a5f;
@@ -57,73 +124,6 @@
     --grid-line-color: rgba(223, 159, 104, 0.04);
     --quote-border: #df9f68;
     --hero-gradient: linear-gradient(135deg, #ffffff 25%, #df9f68 95%);
-
-    /* Typography */
-    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-
-    /* Radii */
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 18px;
-    --radius-xl: 24px;
-    --radius-full: 9999px;
-
-    /* Transitions */
-    --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-normal: 260ms cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* ----------------------------------------------------------------------
-   Minimalist Mocha Light Theme (Warm Editorial Alabaster)
-   ---------------------------------------------------------------------- */
-[data-theme="light"] {
-    --bg-base: #fbf8f5;
-    --bg-surface: rgba(255, 255, 255, 0.94);
-    --bg-surface-elevated: #ffffff;
-    --bg-subtle: #f3ebe1;
-    --bg-muted: #e8ddcf;
-
-    --border-hairline: 1px solid #e7dbcc;
-    --border-card: 1px solid rgba(215, 196, 178, 0.6);
-    --border-hover: #c9b59e;
-    --border-active: #a35f29;
-
-    --text-primary: #231c16;
-    --text-secondary: #4d3f35;
-    --text-muted: #78685b;
-    --text-subtle: #9c8c7e;
-
-    --primary: #a35f29;
-    --primary-hover: #854b1e;
-    --primary-light: #f9f2eb;
-    --primary-border: #e8cfbb;
-    --primary-glow: rgba(163, 95, 41, 0.22);
-
-    --accent: #231c16;
-    --accent-bronze: #a35f29;
-    --accent-terracotta: #c0563b;
-    --accent-emerald: #2d7a4f;
-    --accent-emerald-bg: #edf7f0;
-    --accent-emerald-border: #b6e1c4;
-    
-    --accent-gold: #b47b19;
-    --accent-gold-bg: #fef7e7;
-    --accent-gold-border: #f7dfa7;
-
-    --badge-dark-bg: #231c16;
-    --badge-dark-text: #ffffff;
-    --badge-dark-border: #231c16;
-
-    --header-bg: rgba(251, 248, 245, 0.88);
-    --header-border: 1px solid #e7dbcc;
-
-    --card-shadow: 0 4px 6px -1px rgba(35, 28, 22, 0.04), 0 10px 24px -4px rgba(35, 28, 22, 0.06);
-    --card-shadow-hover: 0 14px 30px -6px rgba(35, 28, 22, 0.12), 0 0 18px rgba(163, 95, 41, 0.18);
-    
-    --grid-line-color: rgba(35, 28, 22, 0.04);
-    --quote-border: #a35f29;
-    --hero-gradient: linear-gradient(135deg, #231c16 35%, #a35f29 100%);
 }
 
 /* ==========================================================================
@@ -171,23 +171,23 @@ body::before {
     pointer-events: none;
     z-index: -2;
     background: 
+        radial-gradient(circle at 14% 16%, rgba(163, 95, 41, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 86% 12%, rgba(192, 86, 59, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 50% 48%, rgba(212, 163, 115, 0.05) 0%, transparent 52%),
+        radial-gradient(circle at 12% 82%, rgba(180, 123, 25, 0.05) 0%, transparent 42%),
+        radial-gradient(circle at 88% 86%, rgba(163, 95, 41, 0.07) 0%, transparent 45%);
+    filter: blur(40px);
+    transition: all var(--transition-normal);
+}
+
+[data-theme="dark"] body::before {
+    background: 
         radial-gradient(circle at 14% 16%, rgba(223, 159, 104, 0.16) 0%, transparent 45%),
         radial-gradient(circle at 86% 12%, rgba(224, 122, 95, 0.12) 0%, transparent 40%),
         radial-gradient(circle at 50% 48%, rgba(184, 115, 51, 0.08) 0%, transparent 52%),
         radial-gradient(circle at 12% 82%, rgba(243, 192, 102, 0.09) 0%, transparent 42%),
         radial-gradient(circle at 88% 86%, rgba(223, 159, 104, 0.12) 0%, transparent 45%);
     filter: blur(45px);
-    transition: all var(--transition-normal);
-}
-
-[data-theme="light"] body::before {
-    background: 
-        radial-gradient(circle at 14% 16%, rgba(163, 95, 41, 0.09) 0%, transparent 45%),
-        radial-gradient(circle at 86% 12%, rgba(192, 86, 59, 0.07) 0%, transparent 40%),
-        radial-gradient(circle at 50% 48%, rgba(180, 123, 25, 0.05) 0%, transparent 52%),
-        radial-gradient(circle at 12% 82%, rgba(163, 95, 41, 0.06) 0%, transparent 42%),
-        radial-gradient(circle at 88% 86%, rgba(192, 86, 59, 0.08) 0%, transparent 45%);
-    filter: blur(35px);
 }
 
 body::after {
@@ -312,7 +312,7 @@ a:hover {
 .logo-badge {
     width: 38px;
     height: 38px;
-    background: linear-gradient(135deg, #2b231d, #1a1512);
+    background: linear-gradient(135deg, #f3ebe1, #e8ddcf);
     color: var(--primary);
     font-family: var(--font-heading);
     font-weight: 800;
@@ -323,15 +323,15 @@ a:hover {
     justify-content: center;
     border-radius: var(--radius-sm);
     border: 1px solid var(--primary-border);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 8px rgba(163, 95, 41, 0.15);
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-[data-theme="light"] .logo-badge {
-    background: linear-gradient(135deg, #f3ebe1, #e8ddcf);
+[data-theme="dark"] .logo-badge {
+    background: linear-gradient(135deg, #2b231d, #1a1512);
     color: var(--primary);
     border-color: var(--primary-border);
-    box-shadow: 0 2px 8px rgba(163, 95, 41, 0.15);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .brand-logo:hover .logo-badge {
@@ -413,10 +413,10 @@ a:hover {
     display: block;
 }
 
-[data-theme="light"] .sun-icon {
+[data-theme="dark"] .sun-icon {
     display: block;
 }
-[data-theme="light"] .moon-icon {
+[data-theme="dark"] .moon-icon {
     display: none;
 }
 
@@ -441,29 +441,30 @@ a:hover {
 }
 
 .btn-primary, .btn-indigo {
-    background: linear-gradient(135deg, #c8854c 0%, #df9f68 100%);
-    color: #1a120b !important;
+    background: linear-gradient(135deg, #8f501e 0%, #a35f29 100%);
+    color: #ffffff !important;
     font-weight: 700;
-    box-shadow: 0 4px 18px rgba(223, 159, 104, 0.35);
+    box-shadow: 0 4px 18px rgba(163, 95, 41, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-primary:hover, .btn-indigo:hover {
-    background: linear-gradient(135deg, #ae703a 0%, #c8854c 100%);
+    background: linear-gradient(135deg, #743e14 0%, #8f501e 100%);
     color: #ffffff !important;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(223, 159, 104, 0.45);
-}
-
-[data-theme="light"] .btn-primary, [data-theme="light"] .btn-indigo {
-    background: linear-gradient(135deg, #8f501e 0%, #a35f29 100%);
-    color: #ffffff !important;
-    box-shadow: 0 4px 18px rgba(163, 95, 41, 0.3);
-}
-
-[data-theme="light"] .btn-primary:hover, [data-theme="light"] .btn-indigo:hover {
-    background: linear-gradient(135deg, #743e14 0%, #8f501e 100%);
     box-shadow: 0 8px 24px rgba(163, 95, 41, 0.4);
+}
+
+[data-theme="dark"] .btn-primary, [data-theme="dark"] .btn-indigo {
+    background: linear-gradient(135deg, #c8854c 0%, #df9f68 100%);
+    color: #1a120b !important;
+    box-shadow: 0 4px 18px rgba(223, 159, 104, 0.35);
+}
+
+[data-theme="dark"] .btn-primary:hover, [data-theme="dark"] .btn-indigo:hover {
+    background: linear-gradient(135deg, #ae703a 0%, #c8854c 100%);
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(223, 159, 104, 0.45);
 }
 
 .btn-outline {
@@ -507,10 +508,6 @@ a:hover {
     background-color: var(--primary-light);
     color: var(--primary);
     border: 1px solid var(--primary-border);
-}
-
-[data-theme="light"] .badge-primary {
-    color: var(--primary);
 }
 
 .badge-dark {
