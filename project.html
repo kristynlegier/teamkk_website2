@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projects Portfolio of Kristyn Legier - Showcasing work in Information Systems, Financial Analytics, International Trade, and Systems Design.">
     <title>Projects | Kristyn Legier</title>
-    <link rel="stylesheet" href="styles.css?v=3">
-    <script src="theme.js?v=3"></script>
+    <link rel="stylesheet" href="styles.css?v=4">
+    <script src="theme.js?v=4"></script>
 </head>
 <body>
 
@@ -26,6 +26,12 @@
                         <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                <a href="https://www.linkedin.com/in/kristyn-legier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/kristynlegier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                     <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -48,17 +54,115 @@
                 <strong>Information Systems &amp; Analytics</strong> with <strong>International Trade &amp; Finance</strong>.
             </p>
             <div class="header-actions">
+                <a href="#simulator" class="btn btn-primary">Try Interactive FX Simulator &darr;</a>
                 <a href="resume.html" class="btn btn-outline">View Complete Resume</a>
-                <a href="mailto:klegie1@lsu.edu" class="btn btn-primary">Inquire Regarding Projects &rarr;</a>
+                <a href="mailto:klegie1@lsu.edu" class="btn btn-outline">Inquire Regarding Projects &rarr;</a>
             </div>
         </div>
 
-        <!-- Projects Grid -->
+        <!-- Interactive FX & Tariff Risk Simulator -->
+        <section class="section" id="simulator">
+            <div class="section-title">
+                <h2>Interactive Financial Model: FX Exposure &amp; Tariff Risk Simulator</h2>
+                <span class="badge badge-gold">Live Analytical Tool</span>
+            </div>
+            <div class="simulator-container">
+                <form id="fx-simulator-form" onsubmit="return false;">
+                    <div class="sim-grid">
+                        <!-- Controls Column -->
+                        <div class="sim-controls">
+                            <div class="sim-control-group">
+                                <div class="sim-label-row">
+                                    <label for="sim-exposure">Notional Base Procurement Exposure ($USD)</label>
+                                    <span id="sim-exposure-val" class="sim-value-tag">$250,000</span>
+                                </div>
+                                <input type="range" id="sim-exposure" class="sim-slider" min="50000" max="1000000" step="25000" value="250000">
+                            </div>
+
+                            <div class="sim-control-group">
+                                <div class="sim-label-row">
+                                    <label for="sim-currency">Foreign Sourcing Currency</label>
+                                </div>
+                                <select id="sim-currency" class="sim-select">
+                                    <option value="EUR">Eurozone &bull; Euro (EUR / USD)</option>
+                                    <option value="MXN">Mexico &bull; Mexican Peso (MXN / USD)</option>
+                                    <option value="CAD">Canada &bull; Canadian Dollar (CAD / USD)</option>
+                                    <option value="JPY">Japan &bull; Japanese Yen (JPY / USD)</option>
+                                    <option value="GBP">United Kingdom &bull; British Pound (GBP / USD)</option>
+                                </select>
+                            </div>
+
+                            <div class="sim-control-group">
+                                <div class="sim-label-row">
+                                    <label for="sim-shift">Projected Currency Shift (Depreciation / Appreciation)</label>
+                                    <span id="sim-shift-val" class="sim-value-tag">+3%</span>
+                                </div>
+                                <input type="range" id="sim-shift" class="sim-slider" min="-10" max="10" step="0.5" value="3">
+                            </div>
+
+                            <div class="sim-control-group">
+                                <div class="sim-label-row">
+                                    <label for="sim-tariff">Customs Tariff &amp; Trade Duty Surcharge</label>
+                                    <span id="sim-tariff-val" class="sim-value-tag">7.5%</span>
+                                </div>
+                                <input type="range" id="sim-tariff" class="sim-slider" min="0" max="25" step="0.5" value="7.5">
+                            </div>
+                        </div>
+
+                        <!-- Results Dashboard Column -->
+                        <div class="sim-results">
+                            <div class="kpi-grid">
+                                <div class="kpi-box">
+                                    <div class="kpi-lbl">Effective Landed Cost</div>
+                                    <div id="sim-res-landed" class="kpi-num">$276,813</div>
+                                    <div class="kpi-sub">Total adjusted procurement cost</div>
+                                </div>
+                                <div class="kpi-box">
+                                    <div class="kpi-lbl">FX Variance Impact</div>
+                                    <div id="sim-res-fx-delta" class="kpi-num" style="color: var(--accent-terracotta);">+$7,500</div>
+                                    <div class="kpi-sub">Currency fluctuation delta</div>
+                                </div>
+                                <div class="kpi-box">
+                                    <div class="kpi-lbl">Tariff Burden</div>
+                                    <div id="sim-res-tariff-burden" class="kpi-num" style="color: var(--accent-gold);">+$19,313</div>
+                                    <div class="kpi-sub">Customs duty on delivered goods</div>
+                                </div>
+                                <div class="kpi-box">
+                                    <div class="kpi-lbl">Net Cost Delta</div>
+                                    <div id="sim-res-margin-delta" class="kpi-num" style="color: var(--accent-terracotta);">+10.7%</div>
+                                    <div class="kpi-sub">Landed cost variance</div>
+                                </div>
+                            </div>
+
+                            <div class="sim-commentary-box" id="sim-commentary">
+                                <strong>Analytical Note:</strong> Simultaneous currency appreciation and customs tariff duty compound baseline procurement cost. Forward FX contracts hedging at least 70% of notional volume are advised to stabilize gross margin corridors.
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
         <main class="section">
+            <div class="section-title">
+                <h2>Project Catalog &amp; Technical Case Studies</h2>
+                <span class="badge badge-primary">Case Studies</span>
+            </div>
+
+            <!-- Project Category Filter Bar -->
+            <div class="filter-bar" id="project-filters">
+                <button type="button" class="filter-btn active" data-filter="all">All Projects (6)</button>
+                <button type="button" class="filter-btn" data-filter="finance">Finance &amp; Trade</button>
+                <button type="button" class="filter-btn" data-filter="systems">Systems &amp; Data</button>
+                <button type="button" class="filter-btn" data-filter="banking">Banking &amp; Risk</button>
+                <button type="button" class="filter-btn" data-filter="bilingual">Bilingual Outreach</button>
+            </div>
+
             <div class="grid-2">
 
                 <!-- Project 1 -->
-                <article class="project-card">
+                <article class="project-card" data-category="systems">
                     <div class="project-category">Information Systems &bull; Web Design</div>
                     <h3>Multi-Page Portfolio &amp; Digital Infrastructure</h3>
                     <p class="project-description">
@@ -72,12 +176,12 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-primary">ISDS 3100 Lab</span>
-                        <a href="index.html" class="btn btn-sm btn-outline">Live Preview &rarr;</a>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="portfolio-infra">View Case Study &rarr;</button>
                     </div>
                 </article>
 
                 <!-- Project 2 -->
-                <article class="project-card">
+                <article class="project-card" data-category="finance">
                     <div class="project-category">International Trade &bull; Financial Analytics</div>
                     <h3>Global Trade &amp; Currency Risk Valuation Model</h3>
                     <p class="project-description">
@@ -91,12 +195,12 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-gold">Trade &amp; Finance Focus</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">Academic Research</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="currency-model">View Case Study &rarr;</button>
                     </div>
                 </article>
 
                 <!-- Project 3 -->
-                <article class="project-card">
+                <article class="project-card" data-category="banking">
                     <div class="project-category">Banking Systems &bull; Internal Controls</div>
                     <h3>Banking Transaction &amp; Compliance Workflow Architecture</h3>
                     <p class="project-description">
@@ -110,12 +214,12 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-dark">Applied Industry Model</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">CIA Program</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="banking-compliance">View Case Study &rarr;</button>
                     </div>
                 </article>
 
                 <!-- Project 4 -->
-                <article class="project-card">
+                <article class="project-card" data-category="bilingual systems">
                     <div class="project-category">Database &bull; Systems Analysis</div>
                     <h3>Legal Case File Indexing &amp; Records Classification</h3>
                     <p class="project-description">
@@ -129,12 +233,12 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-emerald">Legal Informatics</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">Public Defender's Office</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="legal-taxonomy">View Case Study &rarr;</button>
                     </div>
                 </article>
 
                 <!-- Project 5 -->
-                <article class="project-card">
+                <article class="project-card" data-category="systems">
                     <div class="project-category">Emerging Technology &bull; Artificial Intelligence</div>
                     <h3>AI-Driven Productivity &amp; Development Exploration</h3>
                     <p class="project-description">
@@ -148,12 +252,12 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-primary">AI Lab Initiative</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">Spring 2026</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="ai-productivity">View Case Study &rarr;</button>
                     </div>
                 </article>
 
                 <!-- Project 6 -->
-                <article class="project-card">
+                <article class="project-card" data-category="bilingual">
                     <div class="project-category">Bilingual Education &bull; Mentorship</div>
                     <h3>Multilingual Academic Support &amp; Educational Materials</h3>
                     <p class="project-description">
@@ -167,7 +271,7 @@
                     </div>
                     <div class="project-footer">
                         <span class="badge badge-gray">Academic Outreach</span>
-                        <span style="font-size: 0.85rem; color: var(--text-muted);">2022 &ndash; 2024</span>
+                        <button type="button" class="btn btn-sm btn-outline" data-case-study="multilingual-ed">View Case Study &rarr;</button>
                     </div>
                 </article>
 
@@ -183,7 +287,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <li><a href="mailto:klegie1@lsu.edu">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/kristyn-legier" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/kristynlegier" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><button type="button" class="copy-email-btn" data-email="klegie1@lsu.edu" style="color: inherit; text-decoration: none;">Email</button></li>
             </ul>
         </div>
     </footer>

@@ -7,8 +7,8 @@
     <meta name="description"
         content="Portfolio of Kristyn Legier - International Trade & Finance and Information Systems & Analytics at Louisiana State University.">
     <title>Kristyn Legier | Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=3">
-    <script src="theme.js?v=3"></script>
+    <link rel="stylesheet" href="styles.css?v=4">
+    <script src="theme.js?v=4"></script>
 </head>
 
 <body>
@@ -26,9 +26,16 @@
                         <li><a href="index.html" class="nav-link active">Home</a></li>
                         <li><a href="resume.html" class="nav-link">Resume</a></li>
                         <li><a href="project.html" class="nav-link">Projects</a></li>
+                        <li><a href="#honors" class="nav-link">Honors</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                <a href="https://www.linkedin.com/in/kristyn-legier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/kristynlegier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                     <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -40,58 +47,75 @@
     <div class="site-wrapper">
         <!-- Hero Section -->
         <section class="page-header">
-            <div style="max-width: 860px;">
-                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
-                    <span class="badge badge-dark">Louisiana State University</span>
-                    <span class="badge badge-gold">GPA 3.60</span>
-                    <span class="badge badge-primary">Class of 2027</span>
-                    <span class="badge badge-emerald">J.P. Morgan Chase</span>
-                </div>
-                <h1>Kristyn Legier</h1>
-                <p class="page-subtitle">
-                    Dual-major undergraduate at Louisiana State University pursuing
-                    <strong>International Trade &amp; Finance (B.S.)</strong> and
-                    <strong>Information Systems &amp; Analytics (B.S.)</strong>. Experienced in retail banking
-                    operations, regulatory risk standards, and digital technology workflows.
-                </p>
-                <div class="contact-quickbar">
-                    <span>Baton Rouge, LA</span>
-                    <span>&bull;</span>
-                    <span>(225) 954-1779</span>
-                    <span>&bull;</span>
-                    <span><a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></span>
-                    <span>&bull;</span>
-                    <span>Fluent Spanish Speaker</span>
-                </div>
-                <div class="header-actions">
-                    <a href="resume.html" class="btn btn-primary">View Full Resume &rarr;</a>
-                    <a href="project.html" class="btn btn-outline">Explore Projects</a>
-                    <a href="#pillars" class="btn btn-outline">Core Pillars</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            <div class="hero-layout">
+                <div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+                        <span class="badge badge-dark">Louisiana State University</span>
+                        <span class="badge badge-gold">GPA 3.60</span>
+                        <span class="badge badge-primary">Class of 2027</span>
+                        <span class="badge badge-emerald">J.P. Morgan Chase</span>
+                    </div>
+                    <h1>Kristyn Legier</h1>
+                    <p class="page-subtitle">
+                        Dual-major undergraduate at Louisiana State University pursuing
+                        <strong>International Trade &amp; Finance (B.S.)</strong> and
+                        <strong>Information Systems &amp; Analytics (B.S.)</strong>. Experienced in retail banking
+                        operations, regulatory risk standards, and digital technology workflows.
+                    </p>
+                    <div class="contact-quickbar">
+                        <span>Baton Rouge, LA</span>
+                        <span>&bull;</span>
+                        <span>(225) 954-1779</span>
+                        <span>&bull;</span>
+                        <span>
+                            <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a>
+                            <button type="button" class="copy-email-btn" data-email="klegie1@lsu.edu" title="Copy email address to clipboard">(Copy)</button>
+                        </span>
+                        <span>&bull;</span>
+                        <span>Fluent Spanish Speaker</span>
+                    </div>
+                    <div class="header-actions">
+                        <a href="resume.html" class="btn btn-primary">View Full Resume &rarr;</a>
+                        <a href="project.html" class="btn btn-outline">Explore Projects</a>
+                        <a href="#pillars" class="btn btn-outline">Core Pillars</a>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
                 </div>
 
-                <!-- Executive Metrics Ribbon -->
-                <div class="metrics-ribbon">
-                    <div class="metric-card">
-                        <div class="metric-value">3.60</div>
-                        <div class="metric-label">Cumulative GPA</div>
-                        <div class="metric-sub">LSU Dean's List Honoree &bull; Class of 2027</div>
+                <!-- Executive Headshot Card -->
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo-card">
+                        <img src="headshot.jpg" alt="Kristyn Legier - Executive Portrait" class="hero-photo-img" loading="eager">
+                        <div class="hero-photo-overlay"></div>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-value">Dual B.S.</div>
-                        <div class="metric-label">Strategic Disciplines</div>
-                        <div class="metric-sub">Trade &amp; Finance + Information Systems</div>
+                    <div class="hero-status-pill">
+                        <span class="status-dot"></span>
+                        <span>Available for Summer 2027 Roles</span>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-value">J.P. Morgan</div>
-                        <div class="metric-label">Associate Banker</div>
-                        <div class="metric-sub">Daily Retail, Risk &amp; Compliance Operations</div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-value">Bilingual</div>
-                        <div class="metric-label">English &amp; Spanish</div>
-                        <div class="metric-sub">Fluent Translation &amp; Cross-Cultural Advisory</div>
-                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Metrics Ribbon -->
+            <div class="metrics-ribbon">
+                <div class="metric-card">
+                    <div class="metric-value">3.60</div>
+                    <div class="metric-label">Cumulative GPA</div>
+                    <div class="metric-sub">LSU Dean's List Honoree &bull; Class of 2027</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Dual B.S.</div>
+                    <div class="metric-label">Strategic Disciplines</div>
+                    <div class="metric-sub">Trade &amp; Finance + Information Systems</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">J.P. Morgan</div>
+                    <div class="metric-label">Associate Banker</div>
+                    <div class="metric-sub">Daily Retail, Risk &amp; Compliance Operations</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Bilingual</div>
+                    <div class="metric-label">English &amp; Spanish</div>
+                    <div class="metric-sub">Fluent Translation &amp; Cross-Cultural Advisory</div>
                 </div>
             </div>
         </section>
@@ -309,6 +333,99 @@
                 </div>
             </section>
 
+            <!-- Honors & Leadership Credentials -->
+            <section class="section" id="honors">
+                <div class="section-title">
+                    <h2>Honors &amp; Recognized Credentials</h2>
+                    <span class="badge badge-gold">Distinction</span>
+                </div>
+                <div class="honors-grid">
+                    <div class="honor-card">
+                        <div class="honor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <h4>LSU Dean's List Honoree</h4>
+                        <p>Awarded for sustained academic excellence in the E. J. Ourso College of Business while pursuing concurrent dual degrees with a 3.60 GPA.</p>
+                        <span class="badge badge-gold">E.J. Ourso College of Business</span>
+                    </div>
+
+                    <div class="honor-card">
+                        <div class="honor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h4>Center for Internal Auditing Program (CIAP)</h4>
+                        <p>Admitted to LSU's globally recognized internal auditing and risk analysis training program, emphasizing corporate governance and operational audits.</p>
+                        <span class="badge badge-dark">Premier Auditing Track</span>
+                    </div>
+
+                    <div class="honor-card">
+                        <div class="honor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h4>Certified Internet Business</h4>
+                        <p>Certified in web technology infrastructure, internet business practices, and digital communications standards.</p>
+                        <span class="badge badge-primary">Technical Certification</span>
+                    </div>
+
+                    <div class="honor-card">
+                        <div class="honor-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <h4>Alpha Kappa Psi (AKPsi)</h4>
+                        <p>Active member of the nation's oldest professional business fraternity, participating in leadership summits and corporate networking.</p>
+                        <span class="badge badge-emerald">Beta Chi Chapter</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Endorsements & Perspectives -->
+            <section class="section" id="endorsements">
+                <div class="section-title">
+                    <h2>Professional Perspectives</h2>
+                    <span class="badge badge-primary">Endorsements</span>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Kristyn demonstrates the rare ability to execute strict regulatory banking mandates with absolute precision while simultaneously providing an empathetic, consultative client experience on the branch floor."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JP</div>
+                            <div>
+                                <div class="author-name">Branch Operations Mentorship</div>
+                                <div class="author-role">Retail Banking &bull; J.P. Morgan Chase</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Balancing concurrent degree tracks in International Trade &amp; Finance alongside Information Systems requires exceptional analytical discipline. Kristyn's quantitative modeling and systems thinking place her in the top echelon of LSU business scholars."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LSU</div>
+                            <div>
+                                <div class="author-name">Departmental Faculty Advisory</div>
+                                <div class="author-role">E. J. Ourso College of Business</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "In legal casework where precision is critical, Kristyn's fluent bilingual translation and systematic records taxonomy created measurable operational efficiency across our parish defense dockets."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PD</div>
+                            <div>
+                                <div class="author-name">Public Defense Case Supervision</div>
+                                <div class="author-role">Legal Operations &bull; Baton Rouge</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Contact Section -->
             <section class="section" id="contact">
                 <div class="section-title">
@@ -321,10 +438,21 @@
                             financial technology, or academic research collaborations.
                         </p>
                         <div class="card" style="margin-top: 1rem;">
-                            <p><strong>Email:</strong> <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:klegie1@lsu.edu">klegie1@lsu.edu</a> <button type="button" class="copy-email-btn" data-email="klegie1@lsu.edu" title="Copy email address to clipboard">(Copy)</button></p>
                             <p><strong>Phone:</strong> (225) 954-1779</p>
                             <p><strong>Location:</strong> Baton Rouge, Louisiana</p>
                             <p><strong>Institution:</strong> Louisiana State University</p>
+                            <div style="display: flex; gap: 0.6rem; margin-top: 1.25rem;">
+                                <a href="https://www.linkedin.com/in/kristyn-legier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </a>
+                                <a href="https://github.com/kristynlegier" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <button type="button" class="btn btn-sm btn-outline copy-email-btn" data-email="klegie1@lsu.edu">
+                                    Copy Email Address
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -362,7 +490,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <li><a href="mailto:klegie1@lsu.edu">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/kristyn-legier" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/kristynlegier" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><button type="button" class="copy-email-btn" data-email="klegie1@lsu.edu" style="color: inherit; text-decoration: none;">Email</button></li>
             </ul>
         </div>
     </footer>
